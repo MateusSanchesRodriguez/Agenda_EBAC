@@ -6,7 +6,6 @@ const tel = document.getElementById("tel")
 function validarNomeCompleto() {
     const nomeCompleto = nome.value.trim();
     var partesNome = nomeCompleto.split(" ");
-    console.log("Chamada")
     if (partesNome.length < 2) {
         nome.classList.add("error")
         document.getElementById("msg_error").style.display = "inline-block";
