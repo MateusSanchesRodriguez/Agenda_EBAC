@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Agenda</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="imagens/contatos.png" alt="agenda">
+            <h1>Agenda</h1>
+        </header>
+        <form id="form">
+            <label for="name">Nome Completo</label>
+            <input type="text" name="name" id="name"required>
+            <p id="msg_error">
+                O nome deve ser completo
+            </p>
+            <label for="telefone">Telefone</label>
+            <input type="tel" name="telefone" id="tel" pattern="[0-9]{10,14}" required maxlength="11" >
+            <button type="submit" id="submiteBnt">Adicionar</button>
+        </form>
+        <h2>Contatos</h2>
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>
+                        Nome Completo
+                    </th>
+                    <th>Telefone</th>
+                </tr>
+            </thead>
+            <tbody id="corpoTabela">
+            </tbody>
+        </table>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
