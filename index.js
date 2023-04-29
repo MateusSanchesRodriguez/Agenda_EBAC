@@ -3,9 +3,6 @@ const nome = document.getElementById("name")
 const submit = document.getElementById("submiteBnt")
 const tel = document.getElementById("tel")
 
-nome.value = "Mateus Sanches"
-tel.value = "11984362735"
-
 function validarNomeCompleto() {
     const nomeCompleto = nome.value.trim();
     var partesNome = nomeCompleto.split(" ");
